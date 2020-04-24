@@ -676,8 +676,6 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     _animationData = [[MGSwipeAnimationData alloc] init];
     _panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
     #if TARGET_OS_UIKITFORMAC
-        _panRecognizer.minimumNumberOfTouches = 0;
-        _panRecognizer.maximumNumberOfTouches = 0;
         _panRecognizer.allowedScrollTypesMask = UIScrollTypeMaskAll;
     #endif
     [self addGestureRecognizer:_panRecognizer];
