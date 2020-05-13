@@ -678,7 +678,7 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     #if TARGET_OS_UIKITFORMAC
     if (@available(macCatalyst 13.4, *)) {
         _panRecognizer.allowedScrollTypesMask = UIScrollTypeMaskAll;
-    }
+    }`
     #endif
     [self addGestureRecognizer:_panRecognizer];
     _panRecognizer.delegate = self;
